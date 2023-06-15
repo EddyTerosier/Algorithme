@@ -135,3 +135,35 @@ DEBUT
     tournerGauche
     avancer
 FIN
+
+------------------------------------
+
+Les Types 
+
+------------------------------------
+
+Exercice 1 : 
+
+ALGORITHME AlgoVariableType
+
+VARIABLE 
+    word : Chaine de caractère
+
+DEBUT
+    word <- ''
+    avancer
+    word <- word + 'H'
+    avancer
+    word <- word + 'E'
+    tournerDroite
+    avancer
+    word <- word + 'L'
+    tournerGauche
+    avancer
+    word <- word + 'L'
+    tournerGauche
+    avancer
+    word <- word + 'O'
+    tournerDroite
+    avancer
+FIN
