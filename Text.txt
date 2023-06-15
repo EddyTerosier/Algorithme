@@ -1,0 +1,137 @@
+Exercie 1 : 
+
+Etape 1 : TournerGauche;
+Etape 2 : TournerGauche;
+Etape 3 : Avancer;
+Etape 4 : TournerGauche;
+Etape 5 : Avancer;
+Etape 6 : Avancer;
+
+Exercice 2 : 
+
+Etape 1 : Avancer;
+Etape 2 : TournerGauche;
+Etape 3 : Avancer;
+Etape 4 : TournerDroite;
+Etape 5 : Avancer;
+
+Exercice 3 :
+
+Etape 1 : Avancer;
+Etape 2 : TournerGauche;
+Etape 3 : Avancer;
+Etape 4 : TournerDroite;
+Etape 5 : Avancer;
+Etape 6 : TournerDroite;
+Etape 7 : Avancer;
+
+Exercice 4 :
+
+Etape 1 : TournerGauche;
+Etape 2 : TournerGauche;
+Etape 3 : Avancer;
+Etape 4 : TournerDroite;
+Etape 5 : Avancer;
+
+------------------------------------
+
+Les Variables 
+
+------------------------------------
+
+ALGORITHME AlgoVariable1
+
+VARIABLE
+    score : ENTIER; ------ Déclaration de la variable
+
+DEBUT
+    score <- 0 ------ Initialisation de la variable
+    avancer
+    score <- score + 10 ------ Assignation ( donner une valeur à une variable)
+    avancer
+    score <- score + 10
+    avancer
+    score <- score + 10
+    avancer
+FIN
+
+Exercice 1 :
+
+ALGORITHME AlgoVariable2
+
+VARIABLE
+    vie : ENTIER
+    score : ENTIER
+
+DEBUT
+    vie <- 1
+    score <- 0
+    avancer
+    vie <- vie + 1
+    tournerGauche
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    score <- score + 10
+    tournerDroite
+    avancer
+    score <- score + 10
+    tournerGauche
+    tournerGauche
+    avancer
+    avancer
+    avancer
+FIN
+
+------------------------------------
+
+Exercice pour confirmer les acquis 
+
+------------------------------------
+
+Exercice 1 :
+
+ALGORITHME Exo1
+
+DEBUT
+    tournerGauche
+    avancer
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    tournerDroite
+    avancer
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    tournerDroite
+    avancer
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    tournerDroite
+    avancer
+    tournerGauche
+    avancer
+FIN
+
+Avec optimisation
+
+DEBUT
+    tournerGauche
+    POUR compteur ALLANT DE 1 à 3 PAR PAS DE 1 FAIRE
+        avancer
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+        tournerDroite
+    FINPOUR
+    avancer
+    tournerGauche
+    avancer
+FIN
