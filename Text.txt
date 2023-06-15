@@ -167,3 +167,59 @@ DEBUT
     tournerDroite
     avancer
 FIN
+
+Exercice 2 : 
+
+ALGORITHME AlgoVariableType2
+
+VARIABLE
+    powerUp : BOOLEEN
+
+DEBUT
+    powerUp <- FALSE
+    tournerGauche
+    avancer
+    powerUp <- TRUE
+    avancer
+    tournerDroite
+    avancer
+    powerUp <- FALSE
+    tournerDroite
+    avancer
+FIN
+
+Exercie 3 : 
+
+ALGORITHME AlgoVariableType3
+
+VARIABLE
+    powerUp : BOOLEEN
+    word : STRING
+    score : INTEGER
+
+DEBUT
+    powerUp <- TRUE
+    word <- ''
+    score <- 0
+    avancer
+    tournerGauche
+    avancer
+    powerUp <- FALSE
+    avancer
+    word <- word + 'C'
+    avancer
+    powerUp <- TRUE
+    tournerGauche
+    avancer
+    score <- score + 10
+    avancer
+    score <- score + 10
+    tournerGauche
+    avancer
+    word <- word + 'C'
+    tournerGauche
+    avancer
+    powerUp <- FALSE
+    tournerDroite
+    avancer
+FIN
