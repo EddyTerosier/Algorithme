@@ -107,3 +107,51 @@ DEBUT
         arretDeLalgo
     FINSI
 FIN
+
+------------------------------------
+
+Opérateurs logiques exercices - les tests
+
+------------------------------------
+
+ALGORITHME algoTest3
+
+VARIABLE
+    powerUp : BOOL
+
+DEBUT
+    powerUp <- TRUE
+    avancer
+    SI toucheBoiteRouge ET powerUp = TRUE
+    ALORS
+        AFFICHER 'Aîe'
+        powerUp <- FALSE
+    FINSI
+    tournerGauche
+    avancer
+    SI toucheTete
+    ALORS
+        AFFICHER 'Youpi'
+    FINSI
+    tournerGauche
+    avancer
+    SI toucheBoiteRouge ET powerUp = TRUE
+    ALORS
+        AFFICHER 'Aîe'
+        powerUp <- FALSE
+    FINSI
+    tournerDroite
+    avancer
+    SI toucheBoiteRouge ET powerUp = TRUE
+    ALORS
+        AFFICHER 'Aîe'
+        powerUp <- FALSE
+    SINON
+        SI toucheBoiteRouge ET powerUp = FALSE
+        ALORS
+            AFFICHER 'Ouille'
+        FINSI
+    FINSI
+    tournerGauche
+    avancer
+FIN
