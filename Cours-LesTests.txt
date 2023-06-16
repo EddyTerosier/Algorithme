@@ -64,3 +64,46 @@ DEBUT
         arretDeLalgo
     FINSI
 FIN
+
+------------------------------------
+
+Opérateurs logiques - les tests
+
+------------------------------------
+
+ALGORITHME algoTestExemple1
+
+VARIABLE
+    age : INT
+    sexe : BOOL
+
+DEBUT
+    age <- ageDuPersonnage
+    sexe <- sexeDuPersonnage
+    SI age > 20 ET sexe = TRUE
+    ALORS
+        avancer
+    SINON
+        AFFICHER "je ne peux pas passer"
+        arretDeLalgo
+    FINSI
+    avancer
+FIN
+
+ALGORITHME algoTestExemple2
+
+VARIABLE
+    age : INT
+    sexe : BOOL
+
+DEBUT
+    age <- ageDuPersonnage
+    sexe <- sexeDuPersonnage
+    Si age > 28 OU sexe = FALSE
+    ALORS
+        avancer
+    SINON
+        AFFICHER "Je ne peux pas passer"
+        arretDeLalgo
+    FINSI
+FIN
