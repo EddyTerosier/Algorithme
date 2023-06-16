@@ -1,0 +1,66 @@
+------------------------------------
+
+Le cours - les tests 
+
+------------------------------------
+
+SI condition
+ALORS
+    bloc d'instructions
+SINON
+    bloc d'instructions
+FINSI
+
+la condition est une expression logique donnant le résultat VRAI ou FAUX c'est un booléen 
+
+------------------------------------
+
+Les exercices - les tests
+
+------------------------------------
+
+ALGORITHME algoTest1
+
+VARIABLE
+    aLaClef : BOOL
+
+DEBUT
+    aLaClef <- FALSE
+    avancer
+    SI aLaClef = TRUE 
+    ALORS 
+        avancer
+    SINON
+        tournerDroite
+        avancer
+        aLaClef = TRUE
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+    FINSI
+    avancer
+FIN
+
+ALGORITHME algoTest2
+
+VARIABLE
+    age : INT
+
+DEBUT
+    age <- ageDuPersonnage
+    SI age >= 20
+    ALORS
+        avancer
+    SINON 
+        AFFICHER "Je n'ai pas l'age"
+        arretDeLalgo
+    FINSI
+    SI age >= 28
+    ALORS
+        avancer
+    SINON 
+        AFFICHER "Je n'ai pas l'age"
+        arretDeLalgo
+    FINSI
+FIN
