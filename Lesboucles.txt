@@ -103,3 +103,87 @@ DEBUT
     FINPOUR
     AFFICHER resulat
 FIN
+
+------------------------------------
+
+Le cours - la boucle TANT QUE
+
+------------------------------------
+
+Syntaxe
+
+TANT QUE condition FAIRE
+    INSTRUCTION
+FINTANTQUE
+
+Exemple : 
+
+ALGORITHME AlgoSansBoucle
+
+DEBUT
+    avancer
+    avancer
+    avancer
+    avancer
+FIN
+
+ALGORITHME AlgoAvecBoucle
+
+DEBUT
+    TANT QUE naPasAtteintLeDrapeau FAIRE
+        avancer
+    FINTANTQUE
+FIN
+
+ALGORITHME AlgoCoursTANTQUE
+
+DEBUT
+    POUR cpt ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        TANT QUE naPasAtteintLeMur FAIRE
+            avancer
+        FINTANTQUE
+        tournerGauche
+    FINPOUR
+FIN
+
+------------------------------------
+
+Les exercices - la boucle TANT QUE
+
+------------------------------------
+
+ALGORITHME AlgoTantQueExo1
+
+VARIABLE
+    nombre : INT
+    cpt : INT
+
+DEBUT
+    resultat <- 1
+    cpt <- 1
+    TANT QUE resultat < 1000 FAIRE
+        resultat <- resultat * cpt
+        cpt <- cpt + 1
+    FINTANTQUE
+    AFFICHER resulat
+FIN
+
+ALGORITHME AlgoTantQueExo2
+
+VARIABLE
+    chiffre : INT
+
+DEBUT
+    SAISIR chiffre
+    TANT QUE chiffre < 5 FAIRE
+        SAISIR chiffre
+    FINTANTQUE
+FIN
+
+OU
+
+DEBUT
+    FAIRE
+        SAISIR chiffre
+    TANT QUE chiffre < 5
+FIN
