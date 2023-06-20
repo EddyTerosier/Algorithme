@@ -20,3 +20,17 @@ DEBUT
     tournerGauche
     avancer
 FIN
+
+ALGORITHME exercice3
+
+VARIABLE
+    chiffre1 : INT
+    chiffre2 : INT
+    resultat : INT
+
+DEBUT
+    resultat <- 0
+    SAISIR chiffre1
+    SAISIR chiffre2
+    AFFICHER resultat <- chiffre1 + chiffre2
+FIN
