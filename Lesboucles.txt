@@ -1,0 +1,12 @@
+------------------------------------
+
+Le cours - les boucles
+
+------------------------------------
+
+Si nous connaissons le nombre de fois ou Milo doit avancer
+on pourra utiliser la boucle POUR qui va permettre d'effectuer la meme action X fois
+
+Si nous ne connaissons pas le nombre de fois ou Milo doit avancer
+on pourra utiliser la boucle TANT QUE qui va permettre de réaliser une action tant qu'une condition n'est pas atteinte
+

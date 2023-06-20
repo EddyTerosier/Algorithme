@@ -1,0 +1,49 @@
+------------------------------------
+
+Le cours - l'instruction "SELON"
+
+------------------------------------
+
+SELON faim
+    CAS 0 : AFFICHER 'J'ai encore très faim'
+    CAS 1 : AFFICHER 'J'ai encore un peu faim'
+    CAS 2 : AFFICHER 'J'ai bien mangé'
+    CAS 3 : AFFICHER 'Je n'ai plus faim'
+    AUTREMENT : AFFICHER 'Ce cas n'existe pas'
+FINSELON
+
+------------------------------------
+
+Les exercices - l'instruction "SELON"
+
+------------------------------------
+
+ALGORITHME AlgoSelonTest1
+
+VARIABLE
+    mois : INT
+
+DEBUT
+    SAISIR mois
+    SELON x
+        CAS 1 : AFFICHER 'Janver'
+        CAS 2 : AFFICHER 'Fevrier'
+        ...
+        CAS 12 : AFFICHER 'Decembre'
+        AUTREMENT : AFFICHER 'Veuillez saisir un chiffre entre 1 et 12'
+    FINSELON
+
+ALGORITHME AlgoSelonTest2
+
+VARIABLE
+    jours : INT
+
+DEBUT
+    SAISIR jours
+    SELON x
+        CAS 1 : AFFICHER 'Lundi'
+        CAS 2 : AFFICHER 'Mardi'
+        ...
+        CAS 7 : AFFICHER 'Dimanche'
+        AUTREMENT : AFFICHER 'Veuillez saisir un chiffre entre 1 et 7'
+    FINSELON

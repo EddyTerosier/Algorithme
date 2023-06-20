@@ -155,3 +155,55 @@ DEBUT
     tournerGauche
     avancer
 FIN
+
+ALGORITHME algoTest4
+
+VARIABLE
+    score : INT
+    powerUp : BOOL
+DEBUT
+    score <- 0
+    powerUp <- FALSE
+    avancer
+    SI toucheUnePomme
+    ALORS
+        score <- score + 10
+        AFFICHER 'Mon score est de ' + score + ' points'
+        SI score > 25
+        ALORS
+            powerUp <- TRUE
+        FINSI
+    FINSI
+    avancer
+    SI toucheUnePomme
+    ALORS
+        score <- score + 10
+        AFFICHER 'Mon score est de ' + score + ' points'
+        SI score > 25
+        ALORS
+            powerUp <- TRUE
+        FINSI
+    FINSI
+    tournerGauche
+    avancer
+    SI toucheUnePomme
+    ALORS
+        score <- score + 10
+        AFFICHER 'Mon score est de ' + score + ' points'
+        SI score > 25
+        ALORS
+            powerUp <- TRUE
+        FINSI
+    FINSI
+    tournerGauche
+    avancer
+    SI toucheUnePomme
+    ALORS
+        score <- score + 10
+        AFFICHER 'Mon score est de ' + score + ' points'
+        SI score > 25
+        ALORS
+            powerUp <- TRUE
+        FINSI
+    FINSI
+FIN
