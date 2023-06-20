@@ -1,0 +1,22 @@
+------------------------------------
+
+10 Exercices
+
+------------------------------------
+
+ALGORITHME exercice1
+
+DEBUT
+    tournerGauche
+    avancer
+    POUR cpt ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        tournerGauche
+        avancer
+        POUR cpt2 ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+            tournerDroite
+            avancer
+        FINPOUR
+    FINPOUR
+    tournerGauche
+    avancer
+FIN
