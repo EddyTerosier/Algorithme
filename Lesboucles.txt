@@ -10,3 +10,96 @@ on pourra utiliser la boucle POUR qui va permettre d'effectuer la meme action X 
 Si nous ne connaissons pas le nombre de fois ou Milo doit avancer
 on pourra utiliser la boucle TANT QUE qui va permettre de réaliser une action tant qu'une condition n'est pas atteinte
 
+------------------------------------
+
+Le cours - la boucle POUR
+
+------------------------------------
+
+Syntaxe
+
+POUR compteur ALLANT DE debut A fin PAR PAS DE x FAIRE
+    INSTRUCTION
+FINPOUR
+
+Exemple : 
+
+ALGORITHME AlgoSansBoucle
+
+DEBUT
+    avancer
+    avancer
+    avancer
+    avancer
+FIN
+
+ALGORITHME AlgoAvecBoucle
+
+DEBUT
+    POUR cpt ALLANT DE 1 a 4 PAR PAS DE 1 FAIRE
+        avancer
+    FINPOUR
+FIN
+
+------------------------------------
+
+Les exercices - la boucle POUR
+
+------------------------------------
+
+ALGORITHME AlgoPour1
+
+DEBUT
+    avancer
+    POUR cpt ALLANT DE 1 A 2 PAR PAS DE 1 FAIRE
+        tournerDroite
+        avancer
+        tournerGauche
+        avancer
+    FINPOUR
+FIN
+
+ALGORITHME AlgoPour2
+
+DEBUT
+    POUR cpt ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        avancer
+        avancer
+        avancer
+        tournerGauche
+    FINPOUR
+FIN
+
+OU
+
+DEBUT
+    POUR cpt ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        POUR cpt2 ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+            avancer
+        FINPOUR
+        tournerGauche
+    FINPOUR
+FIN
+
+ALGORITHME AlgoPour3
+
+DEBUT
+    POUR cpt ALLANT DE 1 A 10 PAR PAS DE 1 FAIRE
+        AFFICHER ( 2 * cpt)
+    FINPOUR
+FIN
+
+ALGORITHME AlgoPour4
+
+VARIABLE
+    nombre : INT
+    resultat : INT
+
+DEBUT
+    resulat <- 1
+    SAISIR nombre
+    POUR cpt ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat * cpt
+    FINPOUR
+    AFFICHER resulat
+FIN
