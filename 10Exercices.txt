@@ -34,3 +34,24 @@ DEBUT
     SAISIR chiffre2
     AFFICHER resultat <- chiffre1 + chiffre2
 FIN
+
+ALGORITHME exercice6
+
+VARIABLE
+    chiffre : INT
+
+DEBUT
+    FAIRE
+        AFFICHER 'Saisir un chiffre entre 10 et 20'
+        SAISIR chiffre
+        SI chiffre < 10
+        ALORS
+            AFFICHER 'Le chiffre est trop petit'
+        SINON
+            SI chiffre > 20
+            ALORS
+                AFFICHER 'Le chiffre est trop grand'
+            FINSI
+        FINSI
+    TANTQUE chiffre < 10 OU chiffre > 20
+FIN
