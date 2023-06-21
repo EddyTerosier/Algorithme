@@ -55,3 +55,17 @@ DEBUT
         FINSI
     TANTQUE chiffre < 10 OU chiffre > 20
 FIN
+
+ALGORITHME exercice4
+
+VARIABLE
+    nombre : INT
+    ligne : STRING
+
+DEBUT
+    ligne <- '---------'
+    SAISIR nombre
+    POUR cpt ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        AFFICHER ligne
+    FINPOUR
+FIN
