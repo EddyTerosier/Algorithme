@@ -32,3 +32,43 @@ DEBUT
         grimper
     FINPOUR
 FIN
+
+------------------------------------
+
+Les fonctions - les paramètres
+
+------------------------------------
+
+ALGORITHME fonctionParametre1
+
+VARIABLE
+    pseudo1 : STRING
+
+DEBUT
+    FONCTION afficheBjr(pseudoEnEntre)
+    DEBUT
+        AFFICHER 'Bonjour' + pseudoEnEntre
+    FIN
+    SAISIR pseudo1
+    afficheBjr(pseudo1)
+FIN
+
+ALGORITHME fonctionParametre2
+
+VARIABLE
+    nombre : INT
+
+DEBUT
+    FONCTION estPaire(nombreEnEntre)
+    DEBUT
+        SI nombreEnEntre mod 2 = 0
+        ALORS
+            AFFICHER 'Ce nombre est paire'
+        SINON
+            AFFICHER 'Ce nombre est impaire'
+        FINSI
+    FIN
+
+    SAISIR nombre
+    estPaire(nombre)
+FIN
