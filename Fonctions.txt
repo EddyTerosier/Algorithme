@@ -1,0 +1,34 @@
+------------------------------------
+
+Les fonctions - les bases
+
+------------------------------------
+
+Syntaxe 
+
+FONCTION nomDeLaFonction
+DEBUT
+    instruction
+    instruction
+FIN
+
+Exercice
+
+ALGORITHME fonctionExemple
+
+DEBUT
+    FONCTION grimper
+    DEBUT
+        avancer
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+        tournerDroite
+        avancer
+        tournerGauche
+    FIN
+    POUR cpt ALLANT DE 1 A 3 PAR PAS DE 1 FAIRE
+        grimper
+    FINPOUR
+FIN
