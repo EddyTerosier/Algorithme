@@ -125,3 +125,48 @@ DEBUT
     SAISIR sexe
     ageSexe(age,sexe)
 FIN
+
+------------------------------------
+
+Les fonctions - renvoyer une info
+
+------------------------------------
+
+ALGORITHME fonctionReturn1
+
+FONCTION division5(nb)
+DEBUT
+    RETOURNER nb mod 5
+FIN
+
+VARIABLE
+    nombre : INT
+    resultat : INT
+
+DEBUT
+    SAISIR nombre
+    resultat <- division5(nombre)
+    SI resultat = 0
+    ALORS
+        AFFICHER 'Ce nombre est divisible par 5'
+    SINON
+        AFFICHER 'Ce nombre n'est pas divisible par 5'
+    FINSI
+FIN
+
+ALGORITHME fonctionReturn2
+
+FONCTION bjr(nom,prenom)
+DEBUT
+    RETOURNER 'Bonjour ', nom,'', prenom
+FIN
+
+VARIABLE
+    nom : STRING
+    prenom : STRING
+
+DEBUT
+    SAISIR nom
+    SAISIR prenom
+    AFFICHER bjr(nom,prenom)
+FIN
