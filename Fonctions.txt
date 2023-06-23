@@ -72,3 +72,56 @@ DEBUT
     SAISIR nombre
     estPaire(nombre)
 FIN
+
+ALGORITHME fonctionParametre3
+
+VARIABLE
+    nombre1 : INT
+    nombre2 : INT
+    nombre3 : INT
+
+DEBUT
+    FONCTION calcMoy(nb1,nb2,nb3)
+    VARIABLE
+        resultat : INT
+
+    DEBUT
+        resultat <- nb1 + nb2 + nb3
+        resultat <- result / 3
+        AFFICHER 'la moyenne est de ' + resultat
+    FIN
+
+    SAISIR nombre1
+    SAISIR nombre2
+    SAISIR nombre3
+    calcMoy(nombre1,nombre2,nombre3)
+FIN
+
+ALGORITHME fonctionParametre4
+
+VARIABLE
+    age : INT
+    sexe : BOOL
+
+DEBUT
+    FONCTION ageSexe(age,sexe)
+    DEBUT
+        SI age < 18
+        ALORS
+            AFFICHER 'Trop jeune'
+        SINON SI age > 30
+        ALORS
+            AFFICHER 'Trop vieux'
+        FINSI
+        SI sexe = TRUE
+        ALORS
+            AFFICHER 'Femme'
+        SINON
+            AFFICHER 'Homme'
+        FINSI
+    FIN
+
+    SAISIR age
+    SAISIR sexe
+    ageSexe(age,sexe)
+FIN
