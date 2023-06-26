@@ -170,3 +170,68 @@ DEBUT
     SAISIR prenom
     AFFICHER bjr(nom,prenom)
 FIN
+
+------------------------------------
+
+Les fonctions - Exercice final
+
+------------------------------------
+
+ALGORITHME fonctionExerciceFinal
+
+FONCTION menu
+VARIABLE
+    menu : STRING
+
+DEBUT
+    menu <- '1. Calculer la factorielle de ?'
+    menu <- menu + '2. Calculer la somme de ?'
+    menu <- menu + '3. Arreter l'algo'
+    AFFICHER menu
+FIN
+
+FONCTION facto(nombre)
+VARIABLE
+    resultat : INT
+
+DEBUT
+    resulat <- 1
+    POUR cpt ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat * cpt
+    FINPOUR
+    RETOURNER resulat
+FIN
+
+FONCTION somme(nombre)
+VARIABLE
+    resultat : INT
+
+DEBUT
+    resulat <- 0
+    POUR cpt ALLANT DE 1 A nombre PAR PAS DE 1 FAIRE
+        resultat <- resultat + cpt
+    FINPOUR
+    RETOURNER resulat
+FIN
+
+VARIABLE
+    action : INT
+    nombre : INT
+    resultat : INT
+
+DEBUT
+    FAIRE
+        menu
+        AFFICHER 'Quelle action voulez vous faire ?'
+        SAISIR action
+        AFFICHER 'Saisir le chiffre pour le calcul'
+        SAISIR nombre
+        SELON action
+            CAS 1 : resultat <- facto(nombre)
+            CAS 2 : resultat <- somme(nombre)
+            CAS 3 : AFFICHER 'Arret de l'algo'
+            AUTREMENT : AFFICHER 'Veuillez saisir un chiffre entre 1 et 3 pour l'action'
+        FINSELON
+        AFFICHER 'Le resultat est: ', resultat
+    TANT QUE action != 0
+FIN
