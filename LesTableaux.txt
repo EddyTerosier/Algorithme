@@ -39,3 +39,25 @@ DEBUT
     FINPOUR
     AFFICHER t[n]
 FIN
+
+ALGORITHME tableauExo2
+VARIABLE
+    t[n] : ARRAY INT
+
+FONCTION moyenneTableau(t)
+VARIABLE
+    resultat : INT
+
+DEBUT
+    resultat <- 0
+    POUR cpt ALLANT DE 0 A taille(t) - 1 PAR PAS DE 1 FAIRE
+        resultat <- resultat + t[cpt]
+    FINPOUR
+    resultat <- resultat / taille(t)
+    RETOURNER resultat
+FIN
+
+DEBUT
+    t <- [rand(), rand(), rand(), rand()]
+    AFFICHER moyenneTableau(t)
+FIN
