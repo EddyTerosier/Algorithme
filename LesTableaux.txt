@@ -1,0 +1,41 @@
+------------------------------------
+
+Les tableaux - Cours
+
+------------------------------------
+
+Syntaxe
+
+ALGORITHME tableauCours
+VARIABLE
+    t[n] : ARRAY INT
+    t[c] : ARRAY STRING
+
+DEBUT
+    t[0] <- 4
+    t[1] <- 17
+    t[2] <- 12
+    t[3] <- 4
+    AFFICHER t[0] pour afficher le premier élément par exemple
+
+    POUR cpt ALLANT DE 0 A 1 taille(t)-1 PAR PAS DE 1 FAIRE
+        AFFICHER t[cpt]
+    FINPOUR
+FIN
+
+------------------------------------
+
+Les tableaux - Exercices
+
+------------------------------------
+
+ALGORITHME tableauExo1
+VARIABLE
+    t[n] : ARRAY INT
+
+DEBUT
+    POUR cpt ALLANT DE 0 A 5 PAR PAS DE 1 FAIRE
+        t[cpt] <- cpt + 1
+    FINPOUR
+    AFFICHER t[n]
+FIN
